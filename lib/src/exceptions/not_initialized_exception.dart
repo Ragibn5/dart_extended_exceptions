@@ -1,5 +1,3 @@
-
-
 class NotInitializedException implements Exception {
   final String message;
 

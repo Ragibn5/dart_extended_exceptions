@@ -1,5 +1,3 @@
-
-
 class TypeMismatchException implements Exception {
   final String message;
 

@@ -1,5 +1,3 @@
-
-
 class ValueNotSupportedException implements Exception {
   final String message;
 

@@ -1,5 +1,3 @@
-
-
 class NotRequiredException implements Exception {
   final String message;
 

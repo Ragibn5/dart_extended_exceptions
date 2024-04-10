@@ -1,5 +1,3 @@
-
-
 class SerializationException implements Exception {
   final String message;
 

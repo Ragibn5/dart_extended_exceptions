@@ -1,5 +1,3 @@
-
-
 class IllegalArgumentException implements Exception {
   final String message;
 

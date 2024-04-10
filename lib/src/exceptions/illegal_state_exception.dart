@@ -1,5 +1,3 @@
-
-
 class IllegalStateException implements Exception {
   final String message;
 
