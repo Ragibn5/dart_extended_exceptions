@@ -2,7 +2,7 @@ name: dart_extended_exceptions
 description: A collection of missing dart exception classes.
 homepage: https://github.com/Ragibn5/dart_extended_exceptions.git
 
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
