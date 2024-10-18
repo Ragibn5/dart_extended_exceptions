@@ -1,10 +1,8 @@
-class NotInitializedException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  NotInitializedException(this.message);
-
-  @override
-  String toString() {
-    return 'NotInitializedException: $message';
-  }
+class NotInitializedException extends BaseException {
+  NotInitializedException(
+    super.message, {
+    super.stackTrace,
+  });
 }

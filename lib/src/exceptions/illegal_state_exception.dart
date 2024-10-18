@@ -1,10 +1,8 @@
-class IllegalStateException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  IllegalStateException(this.message);
-
-  @override
-  String toString() {
-    return 'IllegalStateException: $message';
-  }
+class IllegalStateException extends BaseException {
+  IllegalStateException(
+    super.message, {
+    super.stackTrace,
+  });
 }

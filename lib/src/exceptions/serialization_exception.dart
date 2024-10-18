@@ -1,10 +1,8 @@
-class SerializationException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  SerializationException(this.message);
-
-  @override
-  String toString() {
-    return 'SerializationException: $message';
-  }
+class SerializationException extends BaseException {
+  SerializationException(
+    super.message, {
+    super.stackTrace,
+  });
 }
