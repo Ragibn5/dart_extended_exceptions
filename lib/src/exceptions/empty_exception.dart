@@ -1,10 +1,8 @@
-class EmptyException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  EmptyException(this.message);
-
-  @override
-  String toString() {
-    return 'EmptyException: $message';
-  }
+class EmptyException extends BaseException {
+  EmptyException(
+    super.message, {
+    super.stackTrace,
+  });
 }

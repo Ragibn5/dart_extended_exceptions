@@ -1,10 +1,8 @@
-class ValueNotSupportedException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  ValueNotSupportedException(this.message);
-
-  @override
-  String toString() {
-    return 'ValueNotSupportedException: $message';
-  }
+class ValueNotSupportedException extends BaseException {
+  ValueNotSupportedException(
+    super.message, {
+    super.stackTrace,
+  });
 }

@@ -1,10 +1,8 @@
-class TypeMismatchException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  TypeMismatchException(this.message);
-
-  @override
-  String toString() {
-    return 'TypeMismatchException: $message';
-  }
+class TypeMismatchException extends BaseException {
+  TypeMismatchException(
+    super.message, {
+    super.stackTrace,
+  });
 }

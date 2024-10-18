@@ -1,10 +1,8 @@
-class NotFoundException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  NotFoundException(this.message);
-
-  @override
-  String toString() {
-    return 'NotFoundException: $message';
-  }
+class NotFoundException extends BaseException {
+  NotFoundException(
+    super.message, {
+    super.stackTrace,
+  });
 }
