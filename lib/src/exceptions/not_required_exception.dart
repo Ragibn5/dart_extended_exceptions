@@ -1,10 +1,8 @@
-class NotRequiredException implements Exception {
-  final String message;
+import 'package:dart_extended_exceptions/src/exceptions/base_exception.dart';
 
-  NotRequiredException(this.message);
-
-  @override
-  String toString() {
-    return 'NotRequiredException: $message';
-  }
+class NotRequiredException extends BaseException {
+  NotRequiredException(
+    super.message, {
+    super.stackTrace,
+  });
 }
